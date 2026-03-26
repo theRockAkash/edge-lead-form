@@ -1,454 +1,1208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Apply — Cloudemy Edge | Android & Flutter Training Lucknow</title>
-<meta name="description" content="Apply to Cloudemy Edge — Lucknow's hands-on Android, Flutter & MERN training lab. A mentor calls within 24 hours.">
-<meta name="robots" content="noindex, nofollow">
-<link rel="icon" type="image/x-icon" href="https://edge.cloudemy.in/favicon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --navy:#03050F;--card:#080D1A;--card2:#0A1120;
-  --b1:#116bfc;--v1:#7b1fe4;--g1:#00FF87;--c1:#00D4FF;
-  --t1:#F2F6FF;--t2:#9BAEC8;--t3:#6480A0;
-  --gb:linear-gradient(135deg,#116bfc,#7b1fe4);
-  --gg:linear-gradient(135deg,#00FF87,#00D4FF);
-  --fh:'Outfit',sans-serif;--fb:'Inter',sans-serif;--fg:'Space Grotesk',sans-serif;
-  --r:14px;
-}
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:var(--fb);background:var(--navy);color:var(--t1);min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply — Cloudemy Edge | Android & Flutter Training Lucknow</title>
+    <meta
+      name="description"
+      content="Apply to Cloudemy Edge — Lucknow's hands-on Android, Flutter & MERN training lab. A mentor calls within 24 hours."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://edge.cloudemy.in/favicon.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --navy: #03050f;
+        --card: #080d1a;
+        --card2: #0a1120;
+        --b1: #116bfc;
+        --v1: #7b1fe4;
+        --g1: #00ff87;
+        --c1: #00d4ff;
+        --t1: #f2f6ff;
+        --t2: #9baec8;
+        --t3: #6480a0;
+        --gb: linear-gradient(135deg, #116bfc, #7b1fe4);
+        --gg: linear-gradient(135deg, #00ff87, #00d4ff);
+        --fh: "Outfit", sans-serif;
+        --fb: "Inter", sans-serif;
+        --fg: "Space Grotesk", sans-serif;
+        --r: 14px;
+      }
+      html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      body {
+        font-family: var(--fb);
+        background: var(--navy);
+        color: var(--t1);
+        min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
 
-/* BG */
-#bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
-#bg::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);background-size:32px 32px}
-.gl1{position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(17,107,252,.1);filter:blur(100px);top:-100px;left:-100px;animation:pulse1 18s ease-in-out infinite alternate}
-.gl2{position:absolute;width:500px;height:500px;border-radius:50%;background:rgba(123,31,228,.09);filter:blur(90px);bottom:-80px;right:-80px;animation:pulse2 22s ease-in-out infinite alternate}
-.gl3{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(0,255,135,.05);filter:blur(80px);top:50%;left:50%;transform:translate(-50%,-50%);animation:pulse1 16s ease-in-out infinite alternate-reverse}
-@keyframes pulse1{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(20px,15px)}}
-@keyframes pulse2{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.1) translate(-15px,20px)}}
+      /* BG */
+      #bg {
+        position: fixed;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        overflow: hidden;
+      }
+      #bg::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.06) 1px,
+          transparent 1px
+        );
+        background-size: 32px 32px;
+      }
+      .gl1 {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: rgba(17, 107, 252, 0.1);
+        filter: blur(100px);
+        top: -100px;
+        left: -100px;
+        animation: pulse1 18s ease-in-out infinite alternate;
+      }
+      .gl2 {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background: rgba(123, 31, 228, 0.09);
+        filter: blur(90px);
+        bottom: -80px;
+        right: -80px;
+        animation: pulse2 22s ease-in-out infinite alternate;
+      }
+      .gl3 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background: rgba(0, 255, 135, 0.05);
+        filter: blur(80px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: pulse1 16s ease-in-out infinite alternate-reverse;
+      }
+      @keyframes pulse1 {
+        0% {
+          transform: scale(1) translate(0, 0);
+        }
+        100% {
+          transform: scale(1.15) translate(20px, 15px);
+        }
+      }
+      @keyframes pulse2 {
+        0% {
+          transform: scale(1) translate(0, 0);
+        }
+        100% {
+          transform: scale(1.1) translate(-15px, 20px);
+        }
+      }
 
-/* LAYOUT */
-.wrap{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:0 20px}
+      /* LAYOUT */
+      .wrap {
+        position: relative;
+        z-index: 1;
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
 
-/* ── HEADER ── */
-header{position:relative;z-index:2;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.06)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto;padding:0 20px}
-.logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo-svg{height:32px;width:auto}
-.logo-text{display:flex;flex-direction:column;line-height:1.1}
-.logo-name{font-family:var(--fh);font-size:.95rem;font-weight:800;color:var(--t1)}
-.logo-tag{font-size:.6rem;font-weight:600;font-family:var(--fg);letter-spacing:.12em;text-transform:uppercase;background:var(--gg);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.wa-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:100px;background:#25D366;color:#fff;font-family:var(--fg);font-size:.76rem;font-weight:600;text-decoration:none;transition:opacity .2s}
-.wa-btn:hover{opacity:.88}
-.wa-btn svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}
+      /* ── HEADER ── */
+      header {
+        position: relative;
+        z-index: 2;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .logo-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+      }
+      .logo-svg {
+        height: 32px;
+        width: auto;
+      }
+      .logo-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+      .logo-name {
+        font-family: var(--fh);
+        font-size: 0.95rem;
+        font-weight: 800;
+        color: var(--t1);
+      }
+      .logo-tag {
+        font-size: 0.6rem;
+        margin-top: 5px;
+        font-weight: 600;
+        font-family: var(--fg);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: var(--gg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .wa-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 7px 14px;
+        border-radius: 100px;
+        background: #25d366;
+        color: #fff;
+        font-family: var(--fg);
+        font-size: 0.76rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .wa-btn:hover {
+        opacity: 0.88;
+      }
+      .wa-btn svg {
+        width: 14px;
+        height: 14px;
+        fill: currentColor;
+        flex-shrink: 0;
+      }
 
-/* ── HERO COPY ── */
-.hero-copy{padding:36px 0 28px;text-align:center}
-.badge{display:inline-flex;align-items:center;gap:7px;padding:5px 14px;border-radius:100px;border:1px solid rgba(17,107,252,.35);background:rgba(17,107,252,.08);font-family:var(--fg);font-size:.72rem;font-weight:600;color:#60a5fa;margin-bottom:18px}
-.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--g1);box-shadow:0 0 8px var(--g1);animation:blink 2s ease-in-out infinite}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hero-copy h1{font-family:var(--fh);font-size:clamp(1.6rem,5vw,2.2rem);font-weight:900;line-height:1.12;letter-spacing:-.02em;margin-bottom:10px}
-.hero-copy h1 .accent{background:var(--gg);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:italic}
-.hero-copy p{font-size:.92rem;color:var(--t2);margin-bottom:20px}
-.urgency{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:100px;background:rgba(0,255,135,.06);border:1px solid rgba(0,255,135,.2);font-family:var(--fg);font-size:.74rem;font-weight:600;color:var(--g1)}
-.urgency svg{width:13px;height:13px;fill:none;stroke:var(--g1);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.seats-bar{display:flex;align-items:center;gap:10px;margin-top:16px;justify-content:center}
-.seats-track{flex:1;max-width:180px;height:5px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
-.seats-fill{height:100%;width:47%;background:var(--gg);border-radius:3px}
-.seats-label{font-size:.7rem;font-family:var(--fg);color:var(--t2)}
-.seats-label strong{color:var(--g1)}
+      /* ── HERO COPY ── */
+      .hero-copy {
+        padding: 36px 0 28px;
+        text-align: center;
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        padding: 5px 14px;
+        border-radius: 100px;
+        border: 1px solid rgba(17, 107, 252, 0.35);
+        background: rgba(17, 107, 252, 0.08);
+        font-family: var(--fg);
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: #60a5fa;
+        margin-bottom: 18px;
+      }
+      .badge-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--g1);
+        box-shadow: 0 0 8px var(--g1);
+        animation: blink 2s ease-in-out infinite;
+      }
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.3;
+        }
+      }
+      .hero-copy h1 {
+        font-family: var(--fh);
+        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        font-weight: 900;
+        line-height: 1.12;
+        letter-spacing: -0.02em;
+        margin-bottom: 10px;
+      }
+      .hero-copy h1 .accent {
+        background: var(--gg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-style: italic;
+      }
+      .hero-copy p {
+        font-size: 0.92rem;
+        color: var(--t2);
+        margin-bottom: 20px;
+      }
+      .urgency {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 7px 16px;
+        border-radius: 100px;
+        background: rgba(0, 255, 135, 0.06);
+        border: 1px solid rgba(0, 255, 135, 0.2);
+        font-family: var(--fg);
+        font-size: 0.74rem;
+        font-weight: 600;
+        color: var(--g1);
+      }
+      .urgency svg {
+        width: 13px;
+        height: 13px;
+        fill: none;
+        stroke: var(--g1);
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .seats-bar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 16px;
+        justify-content: center;
+      }
+      .seats-track {
+        flex: 1;
+        max-width: 180px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+      .seats-fill {
+        height: 100%;
+        width: 47%;
+        background: var(--gg);
+        border-radius: 3px;
+      }
+      .seats-label {
+        font-size: 0.7rem;
+        font-family: var(--fg);
+        color: var(--t2);
+      }
+      .seats-label strong {
+        color: var(--g1);
+      }
 
-/* ── FORM CARD ── */
-.form-card{background:rgba(8,13,26,.8);border:1px solid rgba(17,107,252,.14);border-radius:20px;padding:32px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);margin-bottom:32px}
+      /* ── FORM CARD ── */
+      .form-card {
+        background: rgba(8, 13, 26, 0.8);
+        border: 1px solid rgba(17, 107, 252, 0.14);
+        border-radius: 20px;
+        padding: 32px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        margin-bottom: 32px;
+      }
 
-/* FORM FIELDS */
-.field{margin-bottom:16px}
-.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
-label{display:block;font-family:var(--fg);font-size:.72rem;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
-input,select{width:100%;background:rgba(255,255,255,.034);border:1px solid rgba(255,255,255,.08);border-radius:9px;padding:11px 14px;color:var(--t1);font-family:var(--fb);font-size:.86rem;outline:none;transition:border .2s;-webkit-appearance:none;appearance:none}
-input::placeholder{color:var(--t3)}
-input:focus,select:focus{border-color:rgba(17,107,252,.44);box-shadow:0 0 0 3px rgba(17,107,252,.08)}
-select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A8BAE' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:36px;background-color:rgba(255,255,255,.034)}
-select option{background:#080D1A;color:var(--t1)}
+      /* FORM FIELDS */
+      .field {
+        margin-bottom: 16px;
+      }
+      .field-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        font-family: var(--fg);
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--t3);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      input,
+      select {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.034);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 9px;
+        padding: 11px 14px;
+        color: var(--t1);
+        font-family: var(--fb);
+        font-size: 0.86rem;
+        outline: none;
+        transition: border 0.2s;
+        -webkit-appearance: none;
+        appearance: none;
+      }
+      input::placeholder {
+        color: var(--t3);
+      }
+      input:focus,
+      select:focus {
+        border-color: rgba(17, 107, 252, 0.44);
+        box-shadow: 0 0 0 3px rgba(17, 107, 252, 0.08);
+      }
+      select {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A8BAE' stroke-width='1.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 13px center;
+        padding-right: 36px;
+        background-color: rgba(255, 255, 255, 0.034);
+      }
+      select option {
+        background: #080d1a;
+        color: var(--t1);
+      }
 
-/* DIVIDER */
-.fdiv{display:flex;align-items:center;gap:12px;margin:20px 0}
-.fdiv-line{flex:1;height:1px;background:rgba(255,255,255,.06)}
-.fdiv-text{font-family:var(--fg);font-size:.68rem;color:var(--t3);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
-/* SECTION LABELS */
-.slbl {
-  font-family: var(--fg);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--g1);
-  margin-bottom: 10px;
-  display: block;
-}
-/* SUBMIT */
-.btn-submit{width:100%;padding:15px;border-radius:100px;background:var(--gg);color:#020a14;font-family:var(--fh);font-size:.95rem;font-weight:800;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s;letter-spacing:.01em;margin-top:20px}
-.btn-submit:hover{transform:translateY(-2px);box-shadow:0 0 40px rgba(0,255,135,.28)}
-.btn-submit:active{transform:translateY(0)}
-.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
-.form-note{text-align:center;margin-top:12px;font-size:.74rem;color:var(--t3);font-family:var(--fg)}
+      /* DIVIDER */
+      .fdiv {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 20px 0;
+      }
+      .fdiv-line {
+        flex: 1;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.06);
+      }
+      .fdiv-text {
+        font-family: var(--fg);
+        font-size: 0.68rem;
+        color: var(--t3);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      /* SECTION LABELS */
+      .slbl {
+        font-family: var(--fg);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--g1);
+        margin-bottom: 10px;
+        display: block;
+      }
+      /* SUBMIT */
+      .btn-submit {
+        width: 100%;
+        padding: 15px;
+        border-radius: 100px;
+        background: var(--gg);
+        color: #020a14;
+        font-family: var(--fh);
+        font-size: 0.95rem;
+        font-weight: 800;
+        border: none;
+        cursor: pointer;
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+        letter-spacing: 0.01em;
+        margin-top: 20px;
+      }
+      .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 0 40px rgba(0, 255, 135, 0.28);
+      }
+      .btn-submit:active {
+        transform: translateY(0);
+      }
+      .btn-submit:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+      .form-note {
+        text-align: center;
+        margin-top: 12px;
+        font-size: 0.74rem;
+        color: var(--t3);
+        font-family: var(--fg);
+      }
 
-/* SUCCESS STATE */
-#success{display:none;text-align:center;padding:40px 20px}
-.success-icon{width:64px;height:64px;border-radius:50%;background:rgba(0,255,135,.1);border:1.5px solid rgba(0,255,135,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
-.success-icon svg{width:28px;height:28px;stroke:var(--g1);fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-#success h2{font-family:var(--fh);font-size:1.4rem;font-weight:800;margin-bottom:8px}
-#success p{font-size:.9rem;color:var(--t2);margin-bottom:24px;line-height:1.6}
-.success-wa{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:100px;background:#25D366;color:#fff;font-family:var(--fg);font-size:.88rem;font-weight:700;text-decoration:none;transition:opacity .2s}
-.success-wa:hover{opacity:.88}
-.success-wa svg{width:16px;height:16px;fill:currentColor}
+      /* SUCCESS STATE */
+      #success {
+        display: none;
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .success-icon {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background: rgba(0, 255, 135, 0.1);
+        border: 1.5px solid rgba(0, 255, 135, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+      }
+      .success-icon svg {
+        width: 28px;
+        height: 28px;
+        stroke: var(--g1);
+        fill: none;
+        stroke-width: 2.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #success h2 {
+        font-family: var(--fh);
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin-bottom: 8px;
+      }
+      #success p {
+        font-size: 0.9rem;
+        color: var(--t2);
+        margin-bottom: 24px;
+        line-height: 1.6;
+      }
+      .success-wa {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border-radius: 100px;
+        background: #25d366;
+        color: #fff;
+        font-family: var(--fg);
+        font-size: 0.88rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .success-wa:hover {
+        opacity: 0.88;
+      }
+      .success-wa svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
 
-/* ── INFO STRIP ── */
-.info-strip{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:32px}
-.info-item{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:14px 12px;text-align:center}
-.info-item svg{width:18px;height:18px;stroke:var(--b1);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-bottom:7px}
-.info-item-label{font-family:var(--fg);font-size:.65rem;font-weight:600;color:var(--t3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
-.info-item-val{font-size:.78rem;color:var(--t2);line-height:1.4}
+      /* ── INFO STRIP ── */
+      .info-strip {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+      .info-item {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 12px;
+        padding: 14px 12px;
+        text-align: center;
+      }
+      .info-item svg {
+        width: 18px;
+        height: 18px;
+        stroke: var(--b1);
+        fill: none;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        margin-bottom: 7px;
+      }
+      .info-item-label {
+        font-family: var(--fg);
+        font-size: 0.65rem;
+        font-weight: 600;
+        color: var(--t3);
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 3px;
+      }
+      .info-item-val {
+        font-size: 0.78rem;
+        color: var(--t2);
+        line-height: 1.4;
+      }
 
-/* ── FOOTER ── */
-footer{position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.06);padding:28px 0}
-.footer-inner{max-width:560px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}
-.footer-brand{font-family:var(--fh);font-size:.9rem;font-weight:800;color:var(--t1)}
-.footer-brand span{background:var(--gg);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.footer-address{font-size:.76rem;color:var(--t3);line-height:1.6}
-.footer-contact{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
-.footer-contact a{font-size:.78rem;color:var(--t2);text-decoration:none;transition:color .2s}
-.footer-contact a:hover{color:var(--g1)}
-.socials{display:flex;gap:10px}
-.soc{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;text-decoration:none;transition:border-color .2s,background .2s}
-.soc:hover{border-color:rgba(17,107,252,.4);background:rgba(17,107,252,.08)}
-.soc svg{width:14px;height:14px;fill:var(--t3);transition:fill .2s}
-.soc:hover svg{fill:var(--t1)}
-.footer-legal{font-size:.7rem;color:var(--t3)}
+      /* ── FOOTER ── */
+      footer {
+        position: relative;
+        z-index: 1;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 28px 0;
+      }
+      .footer-inner {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        text-align: center;
+      }
+      .footer-brand {
+        font-family: var(--fh);
+        font-size: 0.9rem;
+        font-weight: 800;
+        color: var(--t1);
+      }
+      .footer-brand span {
+        background: var(--gg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .footer-address {
+        font-size: 0.76rem;
+        color: var(--t3);
+        line-height: 1.6;
+      }
+      .footer-contact {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer-contact a {
+        font-size: 0.78rem;
+        color: var(--t2);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .footer-contact a:hover {
+        color: var(--g1);
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+      }
+      .soc {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+      }
+      .soc:hover {
+        border-color: rgba(17, 107, 252, 0.4);
+        background: rgba(17, 107, 252, 0.08);
+      }
+      .soc svg {
+        width: 14px;
+        height: 14px;
+        fill: var(--t3);
+        transition: fill 0.2s;
+      }
+      .soc:hover svg {
+        fill: var(--t1);
+      }
+      .footer-legal {
+        font-size: 0.7rem;
+        color: var(--t3);
+      }
 
-/* ERROR STATE */
-.field-error{border-color:rgba(239,68,68,.5)!important}
-.err-msg{font-size:.72rem;color:#f87171;margin-top:4px;font-family:var(--fg)}
+      /* ERROR STATE */
+      .field-error {
+        border-color: rgba(239, 68, 68, 0.5) !important;
+      }
+      .err-msg {
+        font-size: 0.72rem;
+        color: #f87171;
+        margin-top: 4px;
+        font-family: var(--fg);
+      }
 
-/* LOADING SPINNER */
-.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(2,10,20,.3);border-top-color:#020a14;border-radius:50%;animation:spin .7s linear infinite;vertical-align:middle;margin-right:6px}
-@keyframes spin{to{transform:rotate(360deg)}}
+      /* LOADING SPINNER */
+      .spinner {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        border: 2px solid rgba(2, 10, 20, 0.3);
+        border-top-color: #020a14;
+        border-radius: 50%;
+        animation: spin 0.7s linear infinite;
+        vertical-align: middle;
+        margin-right: 6px;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
 
-/* RESPONSIVE */
-@media(max-width:480px){
-  .form-card{padding:22px 18px}
-  .field-row{grid-template-columns:1fr}
-  .info-strip{grid-template-columns:1fr}
-  .info-item{display:flex;align-items:center;gap:12px;text-align:left}
-  .info-item svg{margin-bottom:0;flex-shrink:0}
-}
-</style>
-</head>
-<body>
-
-<div id="bg">
-  <div class="gl1"></div>
-  <div class="gl2"></div>
-  <div class="gl3"></div>
-</div>
-
-<!-- HEADER -->
-<header>
-  <div class="header-inner">
-    <a href="https://edge.cloudemy.in" class="logo-wrap" target="_blank" rel="noopener noreferrer">
-      <div class="logo-text">
-        <span class="logo-name">Cloudemy Edge</span>
-        <span class="logo-tag">Learn. Build. Launch.</span>
-      </div>
-    </a>
-    <a href="https://wa.me/917376304026?text=Hi%20Akash!%20I%20want%20to%20know%20more%20about%20Cloudemy%20Edge." target="_blank" rel="noopener noreferrer" class="wa-btn">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.502-5.187-1.381l-.371-.221-3.763.897.941-3.648-.242-.384A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-      Chat with Us
-    </a>
-  </div>
-</header>
-
-<!-- MAIN -->
-<main>
-  <div class="wrap">
-
-    <!-- HERO COPY -->
-    <div class="hero-copy">
-      <div class="badge"><span class="badge-dot"></span>Accepting applications — April 2026</div>
-      <span class="slbl">Join the 1% &mdash; Lucknow &amp; Online</span>
-      <h1>Stop watching tutorials.<br><span class="accent">Start building real apps.</span></h1>
-      <p>Apply in 2 minutes. A mentor calls within 24 hours. No hard sell.</p>
-      <div class="urgency">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        April 1st batch — 15 seats only
-      </div>
-      <div class="seats-bar">
-        <div class="seats-track"><div class="seats-fill"></div></div>
-        <span class="seats-label"><strong>7 seats claimed</strong> — 8 left</span>
-      </div>
+      /* RESPONSIVE */
+      @media (max-width: 480px) {
+        .form-card {
+          padding: 22px 18px;
+        }
+        .field-row {
+          grid-template-columns: 1fr;
+        }
+        .info-strip {
+          grid-template-columns: 1fr;
+        }
+        .info-item {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          text-align: left;
+        }
+        .info-item svg {
+          margin-bottom: 0;
+          flex-shrink: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bg">
+      <div class="gl1"></div>
+      <div class="gl2"></div>
+      <div class="gl3"></div>
     </div>
 
-    <!-- FORM CARD -->
-    <div class="form-card">
-
-      <!-- SUCCESS STATE -->
-      <div id="success">
-        <div class="success-icon">
-          <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
-        </div>
-        <h2>You're on the list 🎯</h2>
-        <p>Akash will call you within <strong style="color:var(--t1)">24 hours</strong> for an honest chat about your goals. No sales pressure — just clarity on the right path for you.</p>
-        <a href="https://wa.me/917376304026?text=Hi%20Akash!%20I%20just%20applied%20on%20Cloudemy%20Edge%20and%20want%20to%20know%20more." target="_blank" rel="noopener noreferrer" class="success-wa">
-          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.502-5.187-1.381l-.371-.221-3.763.897.941-3.648-.242-.384A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
-          WhatsApp Akash directly
+    <!-- HEADER -->
+    <header>
+      <div class="header-inner">
+        <a
+          href="https://edge.cloudemy.in"
+          class="logo-wrap"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="logo-text">
+            <span class="logo-name">Cloudemy Edge</span>
+            <span class="logo-tag">Learn. Build. Launch.</span>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/917376304026?text=Hi,%20I%20want%20to%20know%20more%20about%20Cloudemy%20Edge."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="wa-btn"
+        >
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+            />
+            <path
+              d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.502-5.187-1.381l-.371-.221-3.763.897.941-3.648-.242-.384A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+            />
+          </svg>
+          Chat with Us
         </a>
       </div>
+    </header>
 
-      <!-- FORM -->
-      <form id="lead-form" novalidate>
-
-        <div class="field-row">
-          <div class="field">
-            <label for="fname">Full Name *</label>
-            <input type="text" id="fname" name="fname" placeholder="Your full name" required autocomplete="name">
+    <!-- MAIN -->
+    <main>
+      <div class="wrap">
+        <!-- HERO COPY -->
+        <div class="hero-copy">
+          <div class="badge">
+            <span class="badge-dot"></span>Accepting applications — April 2026
           </div>
-          <div class="field">
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+          <span class="slbl">Join the 1% &mdash; Lucknow &amp; Online</span>
+          <h1>
+            Stop watching tutorials.<br /><span class="accent"
+              >Start building real apps.</span
+            >
+          </h1>
+          <p>
+            Apply in 2 minutes. A mentor calls within 24 hours. No hard sell.
+          </p>
+          <div class="urgency">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+            April 1st batch — 15 seats only
+          </div>
+          <div class="seats-bar">
+            <div class="seats-track"><div class="seats-fill"></div></div>
+            <span class="seats-label"
+              ><strong>7 seats claimed</strong> — 8 left</span
+            >
           </div>
         </div>
 
-        <div class="field-row">
-          <div class="field">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" placeholder="you@email.com" required autocomplete="email">
+        <!-- FORM CARD -->
+        <div class="form-card">
+          <!-- SUCCESS STATE -->
+          <div id="success">
+            <div class="success-icon">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h2>You're on the list 🎯</h2>
+            <p>
+              We will call you within
+              <strong style="color: var(--t1)">24 hours</strong> for an honest
+              chat about your goals. No sales pressure — just clarity on the
+              right path for you.
+            </p>
+            <a
+              href="https://wa.me/917376304026?text=Hi,%20I%20just%20applied%20on%20Cloudemy%20Edge%20and%20want%20to%20know%20more."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="success-wa"
+            >
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                />
+                <path
+                  d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.885 0-3.655-.502-5.187-1.381l-.371-.221-3.763.897.941-3.648-.242-.384A9.944 9.944 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"
+                />
+              </svg>
+              WhatsApp Us directly
+            </a>
           </div>
-          <div class="field">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" placeholder="Lucknow, Kanpur..." autocomplete="city">
+
+          <!-- FORM -->
+          <form id="lead-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="fname">Full Name *</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+91 98765 43210"
+                  required
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="email">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@email.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+              <div class="field">
+                <label for="city">City</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Lucknow, Kanpur..."
+                  autocomplete="city"
+                />
+              </div>
+            </div>
+
+            <div class="fdiv">
+              <div class="fdiv-line"></div>
+              <div class="fdiv-text">Choose your path</div>
+              <div class="fdiv-line"></div>
+            </div>
+
+            <div class="field">
+              <label for="track">What do you want to build? *</label>
+              <select id="track" name="track" required>
+                <option value="" disabled selected>Pick a track</option>
+                <option value="Android Dev">
+                  Android Dev — Native apps (Kotlin/Java)
+                </option>
+                <option value="Flutter Dev">
+                  Flutter Dev — Cross-platform (iOS + Android)
+                </option>
+                <option value="MERN Stack">
+                  MERN Stack — Full-stack web apps
+                </option>
+                <option value="Python Dev">
+                  Python Dev — Backend & automation
+                </option>
+                <option value="PHP & Laravel">
+                  PHP & Laravel — Web backends
+                </option>
+                <option value="UI/UX Design">
+                  UI/UX & Design — Figma, Photoshop, Illustrator
+                </option>
+                <option value="Not sure">Not sure — help me choose</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="program">How deep do you want to go? *</label>
+              <select id="program" name="program" required>
+                <option value="" disabled selected>Choose a program</option>
+                <option value="45-Day Sprint">
+                  45-Day Sprint — From ₹6,000
+                </option>
+                <option value="3-Month Internship">
+                  3-Month Internship — From ₹15,000
+                </option>
+                <option value="6-Month Apprenticeship">
+                  6-Month Apprenticeship — From ₹24,000 ⭐ Most Popular
+                </option>
+                <option value="Not sure">Not sure — We will advise</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submit-btn">
+              I want to be in the top 1%
+            </button>
+            <p class="form-note">
+              No spam. No calls at 7am. We respect your time.
+            </p>
+          </form>
+        </div>
+
+        <!-- INFO STRIP -->
+        <div class="info-strip">
+          <div class="info-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <div>
+              <div class="info-item-label">Location</div>
+              <div class="info-item-val">
+                Diamond City Plaza, Jankipuram, Lucknow
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="fdiv"><div class="fdiv-line"></div><div class="fdiv-text">Choose your path</div><div class="fdiv-line"></div></div>
-
-        <div class="field">
-          <label for="track">What do you want to build? *</label>
-          <select id="track" name="track" required>
-            <option value="" disabled selected>Pick a track</option>
-            <option value="Android Dev">Android Dev — Native apps (Kotlin/Java)</option>
-            <option value="Flutter Dev">Flutter Dev — Cross-platform (iOS + Android)</option>
-            <option value="MERN Stack">MERN Stack — Full-stack web apps</option>
-            <option value="Python Dev">Python Dev — Backend & automation</option>
-            <option value="PHP & Laravel">PHP & Laravel — Web backends</option>
-            <option value="UI/UX Design">UI/UX & Design — Figma, Photoshop, Illustrator</option>
-            <option value="Not sure">Not sure — help me choose</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="program">How deep do you want to go? *</label>
-          <select id="program" name="program" required>
-            <option value="" disabled selected>Choose a program</option>
-            <option value="45-Day Sprint">45-Day Sprint — From ₹6,000</option>
-            <option value="3-Month Internship">3-Month Internship — From ₹15,000</option>
-            <option value="6-Month Apprenticeship">6-Month Apprenticeship — From ₹24,000 ⭐ Most Popular</option>
-            <option value="Not sure">Not sure — Akash will advise</option>
-          </select>
-        </div>
-
-        <button type="submit" class="btn-submit" id="submit-btn">
-          I want to be in the top 1%
-        </button>
-        <p class="form-note">No spam. No calls at 7am. We respect your time.</p>
-
-      </form>
-    </div>
-
-    <!-- INFO STRIP -->
-    <div class="info-strip">
-      <div class="info-item">
-        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <div>
-          <div class="info-item-label">Location</div>
-          <div class="info-item-val">Diamond City Plaza, Jankipuram, Lucknow</div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.19 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.91 17l.57-.57a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              />
+            </svg>
+            <div>
+              <div class="info-item-label">Contact</div>
+              <div class="info-item-val">
+                +91 9044 41 5050<br />info@cloudemy.in
+              </div>
+            </div>
+          </div>
+          <div class="info-item">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path
+                d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"
+              />
+            </svg>
+            <div>
+              <div class="info-item-label">Website</div>
+              <div class="info-item-val">edge.cloudemy.in<br />cloudemy.in</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="info-item">
-        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.19 2 2 0 012.22 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09A16 16 0 0015.91 17l.57-.57a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        <div>
-          <div class="info-item-label">Contact</div>
-          <div class="info-item-val">+91 9044 41 5050<br>info@cloudemy.in</div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">Cloudemy <span>Edge</span></div>
+        <div class="footer-address">
+          Diamond City Plaza, B-2/23, Sector F, Jankipuram<br />Lucknow, Uttar
+          Pradesh 226021
+        </div>
+        <div class="footer-contact">
+          <a href="tel:+917376304026">+91 9044 41 5050</a>
+          <a href="mailto:info@cloudemy.in">info@cloudemy.in</a>
+          <a
+            href="https://edge.cloudemy.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            >edge.cloudemy.in</a
+          >
+        </div>
+        <div class="socials">
+          <!-- YouTube -->
+          <a
+            href="https://youtube.com/@theRockAkash"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="soc"
+            aria-label="YouTube"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"
+              />
+              <polygon
+                points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"
+                fill="var(--navy)"
+              />
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/company/cloudemyindia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="soc"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a
+            href="https://instagram.com/cloudemyindia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="soc"
+            aria-label="Instagram"
+          >
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+          <!-- X/Twitter -->
+          <a
+            href="https://x.com/cloudemyindia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="soc"
+            aria-label="X"
+          >
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="footer-legal">
+          &copy; 2025 Cloudemy Digital Technologies Pvt. Ltd.
+          &nbsp;&middot;&nbsp;
+          <a
+            href="https://edge.cloudemy.in/privacy.html"
+            style="color: inherit"
+            target="_blank"
+            >Privacy</a
+          >
+          &nbsp;&middot;&nbsp;
+          <a
+            href="https://edge.cloudemy.in/terms.html"
+            style="color: inherit"
+            target="_blank"
+            >Terms</a
+          >
         </div>
       </div>
-      <div class="info-item">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-        <div>
-          <div class="info-item-label">Website</div>
-          <div class="info-item-val">edge.cloudemy.in<br>cloudemy.in</div>
-        </div>
-      </div>
-    </div>
+    </footer>
 
-  </div>
-</main>
+    <script>
+      (function () {
+        var form = document.getElementById("lead-form");
+        var successDiv = document.getElementById("success");
+        var submitBtn = document.getElementById("submit-btn");
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">Cloudemy <span>Edge</span></div>
-    <div class="footer-address">Diamond City Plaza, B-2/23, Sector F, Jankipuram<br>Lucknow, Uttar Pradesh 226021</div>
-    <div class="footer-contact">
-      <a href="tel:+917376304026">+91 9044 41 5050</a>
-      <a href="mailto:info@cloudemy.in">info@cloudemy.in</a>
-      <a href="https://edge.cloudemy.in" target="_blank" rel="noopener noreferrer">edge.cloudemy.in</a>
-    </div>
-    <div class="socials">
-      <!-- YouTube -->
-      <a href="https://youtube.com/@theRockAkash" target="_blank" rel="noopener noreferrer" class="soc" aria-label="YouTube">
-        <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="var(--navy)"/></svg>
-      </a>
-      <!-- LinkedIn -->
-      <a href="https://linkedin.com/company/cloudemyindia" target="_blank" rel="noopener noreferrer" class="soc" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <!-- Instagram -->
-      <a href="https://instagram.com/cloudemyindia" target="_blank" rel="noopener noreferrer" class="soc" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-      </a>
-      <!-- X/Twitter -->
-      <a href="https://x.com/cloudemyindia" target="_blank" rel="noopener noreferrer" class="soc" aria-label="X">
-        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-      </a>
-    </div>
-    <div class="footer-legal">&copy; 2025 Cloudemy Digital Technologies Pvt. Ltd. &nbsp;&middot;&nbsp; <a href="https://edge.cloudemy.in/privacy.html" style="color:inherit" target="_blank">Privacy</a> &nbsp;&middot;&nbsp; <a href="https://edge.cloudemy.in/terms.html" style="color:inherit" target="_blank">Terms</a></div>
-  </div>
-</footer>
+        function showError(input, msg) {
+          input.classList.add("field-error");
+          var existing = input.parentNode.querySelector(".err-msg");
+          if (!existing) {
+            var el = document.createElement("p");
+            el.className = "err-msg";
+            el.textContent = msg;
+            input.parentNode.appendChild(el);
+          }
+        }
 
-<script>
-(function(){
-  var form = document.getElementById('lead-form');
-  var successDiv = document.getElementById('success');
-  var submitBtn = document.getElementById('submit-btn');
+        function clearErrors() {
+          document.querySelectorAll(".field-error").forEach(function (el) {
+            el.classList.remove("field-error");
+          });
+          document.querySelectorAll(".err-msg").forEach(function (el) {
+            el.remove();
+          });
+        }
 
-  function showError(input, msg){
-    input.classList.add('field-error');
-    var existing = input.parentNode.querySelector('.err-msg');
-    if(!existing){
-      var el = document.createElement('p');
-      el.className = 'err-msg';
-      el.textContent = msg;
-      input.parentNode.appendChild(el);
-    }
-  }
+        function validatePhone(val) {
+          return /^[+]?[\d\s\-()]{8,15}$/.test(val.trim());
+        }
 
-  function clearErrors(){
-    document.querySelectorAll('.field-error').forEach(function(el){ el.classList.remove('field-error'); });
-    document.querySelectorAll('.err-msg').forEach(function(el){ el.remove(); });
-  }
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          clearErrors();
 
-  function validatePhone(val){
-    return /^[+]?[\d\s\-()]{8,15}$/.test(val.trim());
-  }
+          var name = document.getElementById("fname");
+          var phone = document.getElementById("phone");
+          var email = document.getElementById("email");
+          var track = document.getElementById("track");
+          var program = document.getElementById("program");
 
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    clearErrors();
+          var valid = true;
 
-    var name    = document.getElementById('fname');
-    var phone   = document.getElementById('phone');
-    var email   = document.getElementById('email');
-    var track   = document.getElementById('track');
-    var program = document.getElementById('program');
+          if (!name.value.trim()) {
+            showError(name, "Please enter your full name");
+            valid = false;
+          }
+          if (!phone.value.trim()) {
+            showError(phone, "Please enter your phone number");
+            valid = false;
+          } else if (!validatePhone(phone.value)) {
+            showError(phone, "Please enter a valid phone number");
+            valid = false;
+          }
+          if (!email.value.trim()) {
+            showError(email, "Please enter your email");
+            valid = false;
+          } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+            showError(email, "Please enter a valid email");
+            valid = false;
+          }
+          if (!track.value) {
+            showError(track, "Please choose a track");
+            valid = false;
+          }
+          if (!program.value) {
+            showError(program, "Please choose a program");
+            valid = false;
+          }
 
-    var valid = true;
+          if (!valid) return;
 
-    if(!name.value.trim()){
-      showError(name, 'Please enter your full name'); valid = false;
-    }
-    if(!phone.value.trim()){
-      showError(phone, 'Please enter your phone number'); valid = false;
-    } else if(!validatePhone(phone.value)){
-      showError(phone, 'Please enter a valid phone number'); valid = false;
-    }
-    if(!email.value.trim()){
-      showError(email, 'Please enter your email'); valid = false;
-    } else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){
-      showError(email, 'Please enter a valid email'); valid = false;
-    }
-    if(!track.value){
-      showError(track, 'Please choose a track'); valid = false;
-    }
-    if(!program.value){
-      showError(program, 'Please choose a program'); valid = false;
-    }
+          // Build message string
+          var city = document.getElementById("city").value.trim();
+          var message =
+            "Track: " +
+            track.value +
+            " | Program: " +
+            program.value +
+            " | Phone: " +
+            phone.value.trim() +
+            (city ? " | City: " + city : "");
 
-    if(!valid) return;
+          // Show loading
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span class="spinner"></span>Submitting...';
 
-    // Build message string
-    var city = document.getElementById('city').value.trim();
-    var message = 'Track: ' + track.value
-      + ' | Program: ' + program.value
-      + ' | Phone: ' + phone.value.trim()
-      + (city ? ' | City: ' + city : '');
+          fetch(
+            "https://us-central1-cloudemy-infotech.cloudfunctions.net/createCourseLead",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: name.value.trim(),
+                email: email.value.trim(),
+                message: "New Lead",
+                source: "Lead Form",
+                courseInterest: track.value,
+                program: program.value,
+                phone: phone.value.trim(),
+                city: city ? " | City: " + city : "",
+              }),
+            },
+          )
+            .then(function (res) {
+              return res.json();
+            })
+            .then(function (data) {
+              if (data.success || data.message) {
+                // Show success
+                form.style.display = "none";
+                successDiv.style.display = "block";
+                // Open WA after brief delay
+                // setTimeout(function () {
+                //   var waMsg =
+                //     "Hi! I just applied on Cloudemy Edge." +
+                //     "%0AName: " +
+                //     encodeURIComponent(name.value.trim()) +
+                //     "%0APhone: " +
+                //     encodeURIComponent(phone.value.trim()) +
+                //     "%0ATrack: " +
+                //     encodeURIComponent(track.value) +
+                //     "%0AProgram: " +
+                //     encodeURIComponent(program.value) +
+                //     (city ? "%0ACity: " + encodeURIComponent(city) : "");
+                //   window.open(
+                //     "https://wa.me/917376304026?text=" + waMsg,
+                //     "_blank",
+                //   );
+                // }, 1200);
+              } else {
+                throw new Error("API returned failure");
+              }
+            })
+            .catch(function () {
+              // On error — still show success to not lose lead, but log
+              form.style.display = "none";
+              successDiv.style.display = "block";
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = "I want to be in the top 1%";
+            });
+        });
 
-    // Show loading
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<span class="spinner"></span>Submitting...';
-
-    fetch('https://sendcontactemail-kfstw577ya-uc.a.run.app/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        name:    name.value.trim(),
-        email:   email.value.trim(),
-        message: message,
-        source:  'Lead Form'
-      })
-    })
-    .then(function(res){ return res.json(); })
-    .then(function(data){
-      if(data.success || data.message){
-        // Show success
-        form.style.display = 'none';
-        successDiv.style.display = 'block';
-        // Open WA after brief delay
-        setTimeout(function(){
-          var waMsg = 'Hi Akash! I just applied on Cloudemy Edge.'
-            + '%0AName: ' + encodeURIComponent(name.value.trim())
-            + '%0APhone: ' + encodeURIComponent(phone.value.trim())
-            + '%0ATrack: ' + encodeURIComponent(track.value)
-            + '%0AProgram: ' + encodeURIComponent(program.value)
-            + (city ? '%0ACity: ' + encodeURIComponent(city) : '');
-          window.open('https://wa.me/917376304026?text=' + waMsg, '_blank');
-        }, 1200);
-      } else {
-        throw new Error('API returned failure');
-      }
-    })
-    .catch(function(){
-      // On error — still show success to not lose lead, but log
-      form.style.display = 'none';
-      successDiv.style.display = 'block';
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = 'I want to be in the top 1%';
-    });
-  });
-
-  // Clear error on input
-  document.querySelectorAll('input, select').forEach(function(el){
-    el.addEventListener('input', function(){
-      el.classList.remove('field-error');
-      var err = el.parentNode.querySelector('.err-msg');
-      if(err) err.remove();
-    });
-  });
-})();
-</script>
-</body>
+        // Clear error on input
+        document.querySelectorAll("input, select").forEach(function (el) {
+          el.addEventListener("input", function () {
+            el.classList.remove("field-error");
+            var err = el.parentNode.querySelector(".err-msg");
+            if (err) err.remove();
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
